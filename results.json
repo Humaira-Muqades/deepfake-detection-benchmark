@@ -1,0 +1,12 @@
+{
+  "dataset": "DFDC train sample (face crops)",
+  "images_per_class": 6000,
+  "epochs": 8,
+  "early_stopping": "val AUC, patience 3",
+  "results": {
+    "resnet":       {"accuracy": 0.9772, "auc": 0.9972, "log_loss": 0.0664, "f1": 0.9770, "minutes": 15.2},
+    "efficientnet": {"accuracy": 0.9744, "auc": 0.9976, "log_loss": 0.0759, "f1": 0.9739, "minutes": 6.9},
+    "xception":     {"accuracy": 0.9711, "auc": 0.9969, "log_loss": 0.0755, "f1": 0.9705, "minutes": 53.2},
+    "vit":          {"accuracy": 0.7839, "auc": 0.8707, "log_loss": 0.4536, "f1": 0.7672, "minutes": 46.1}
+  }
+}
